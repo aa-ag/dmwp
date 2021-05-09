@@ -10,9 +10,9 @@ def create_a_fraction():
     f = Fraction(3, 4)
     # print(type(f))  # <class 'fractions.Fraction'>
     print(f)  # 3/4
-    print(f + 1 + 1.5)  # 3.25
+    # print(f + 1 + 1.5)  # 3.25
 
-    print(Fraction(3, 4) + 1 + Fraction(1/4))
+    # print(Fraction(3, 4) + 1 + Fraction(1/4))
 
 
 ###--- DRIVER CODE ---###
