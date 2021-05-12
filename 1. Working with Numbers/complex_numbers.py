@@ -9,3 +9,6 @@ print(a)
 b = 3 + 3j
 print(a + b)
 # (5+6j)
+
+print(a - b)
+# (-1+0j)
