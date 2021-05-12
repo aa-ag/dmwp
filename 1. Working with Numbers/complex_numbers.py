@@ -12,3 +12,6 @@ print(a + b)
 
 print(a - b)
 # (-1+0j)
+
+print(a * b)
+# (-3+15j)
