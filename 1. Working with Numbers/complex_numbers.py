@@ -22,4 +22,9 @@
 z = 2 + 3j
 # print(z.real)
 # print(z.imag)
-print(z.conjugate())
+# print(z.conjugate())
+# the magnitude of a complex number
+print((z.real ** 2 + z.imag ** 2) ** 0.5)  # 3.605551275463989
+# or
+print(abs(z))  # 3.605551275463989
+print(abs(z) == (z.real ** 2 + z.imag ** 2) ** 0.5)  # True
