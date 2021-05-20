@@ -20,4 +20,5 @@
 # (0.8333333333333334+0.16666666666666666j)
 
 z = 2 + 3j
-print(z.real)
+# print(z.real)
+print(z.imag)
