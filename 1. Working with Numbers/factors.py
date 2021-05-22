@@ -9,4 +9,5 @@ def is_factor(a, b):
     return False
 
 
-print(is_factor(4, 1024))
+print(is_factor(4, 1024))  # True
+print(is_factor(4, 1023))  # False
