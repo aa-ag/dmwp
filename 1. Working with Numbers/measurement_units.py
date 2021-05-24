@@ -1,14 +1,16 @@
 def print_menu():
-    print('Enter 1 to conver Kilometers to Miles')
-    print('Enter 2 to conver Kilometers to Miles')
+    print('Enter 1 to convert Kilometers to Miles')
+    print('Enter 2 to convert Kilometers to Miles')
 
 
 def kilometer_to_miles():
-    pass
+    kilometers = input('Enter number of kilometers:\n')
+    return f"\n{int(kilometers) / 1.609} miles"
 
 
 def miles_to_kilometers():
-    pass
+    miles = input('Enter number of miles:\n')
+    return f"\n{int(miles) * 1.609} kilometers"
 
 
 if __name__ == '__main__':
@@ -16,10 +18,10 @@ if __name__ == '__main__':
 
     option = input('Which conversion would you like to do?\n')
     if option == '1':
-        kilometer_to_miles()
+        print(kilometer_to_miles())
 
     if option == '2':
-        miles_to_kilometers()
+        print(miles_to_kilometers())
 
 
 # inches to meters
