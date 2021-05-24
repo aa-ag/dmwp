@@ -1,5 +1,5 @@
 def print_menu():
-    print('''Enter 1 to convert kilometers to miles\n2 to convert miles to kilometers\n"q" to quit\exit''')
+    print('Enter 1 to convert kilometers to miles\n2 to convert miles to kilometers\n"q" to quit\exit')
 
 
 def kilometer_to_miles():
