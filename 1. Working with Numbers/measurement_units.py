@@ -5,12 +5,12 @@ def print_menu():
 
 def kilometer_to_miles():
     kilometers = input('Enter number of kilometers:\n')
-    return f"\n{int(kilometers) / 1.609} miles"
+    return f"\n{round(int(kilometers) / 1.609, 2)} miles"
 
 
 def miles_to_kilometers():
     miles = input('Enter number of miles:\n')
-    return f"\n{int(miles) * 1.609} kilometers"
+    return f"\n{round(int(miles) * 1.609, 2)} kilometers"
 
 
 if __name__ == '__main__':
