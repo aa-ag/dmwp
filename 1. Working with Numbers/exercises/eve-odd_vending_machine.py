@@ -18,10 +18,24 @@ def even_odd_vending_machine():
             print('\nbye.')
             break
 
-        if int(n) % 2 == 0:
-            print(f"\n{n} is even")
+        n = int(n)
+
+        if n % 2 == 0:
+            print(f"\n---> {n} is even")
+            print(
+                f"\nHere's a list with\nthe next 9 even numbers:\n{generate_list(n)}")
         else:
-            print(f"\n{n} is odd")
+            print(f"\n---> {n} is odd")
+            print(
+                f"\nHere's a list with\nthe next 9 odd numbers:\n{generate_list(n)}")
+
+
+def generate_list(n):
+    l = []
+    while len(l) < 10:
+        l.append(n)
+        n = n + 2
+    return l
 
 
 ######------ DRIVER CODE ------######
