@@ -11,11 +11,17 @@ which will take a number as input and do two things:
 
 ######------ FUNCTIONS ------######
 def even_odd_vending_machine():
-    n = input("Enter an integer (and \"q\" to quit/exit):\n")
-    if int(n) % 2 == 0:
-        print(f"\n{n} is even")
-    else:
-        print(f"\n{n} is odd")
+    while True:
+        n = input("\nEnter an integer (and \"q\" to quit/exit):\n")
+
+        if n == 'q':
+            print('\nbye.')
+            break
+
+        if int(n) % 2 == 0:
+            print(f"\n{n} is even")
+        else:
+            print(f"\n{n} is odd")
 
 
 ######------ DRIVER CODE ------######
