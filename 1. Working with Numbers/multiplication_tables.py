@@ -1,15 +1,21 @@
-def multiplication_table(a):
+def multiplication_table(n, m):
     '''
      multiplication table printer
     '''
-    for i in range(1, 11):
-        print('{0} x {1} = {2}'.format(a, i, a*i))
+    for i in range(1, m + 1):
+        print('{0} x {1} = {2}'.format(n, i, n*i))
 
 
 if __name__ == '__main__':
     while True:
-        a = input('Enter a number: ')
-        if a == 'q':
+        n = input('Enter a number: ')
+        if n == 'q':
             print('bye')
             break
-        multiplication_table(int(a))
+
+        m = input('Enter a multiple: ')
+        if m == 'q':
+            print('bye')
+            break
+
+        multiplication_table(int(n), int(m))
