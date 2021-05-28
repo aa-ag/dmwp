@@ -4,7 +4,10 @@ def measure_correlation(x, y):
 
     product = [(i * j) for i, j in zip(x, y)]
 
-    print(product)
+    squared_x_sum = sum(x) ** 2
+    squared_y_sum = sum(y) ** 2
+
+    print(squared_x_sum, squared_y_sum)
 
 
 ############------------ DRIVER CODE ------------############
