@@ -12,6 +12,15 @@ def calculate_mean(numbers):
     return numbers_sum / list_lenght
 
 
+def find_differences(numbers):
+    '''
+     calculate distance from each number to the mean
+    '''
+    mean = calculate_mean(numbers)
+    differences = [(number - mean) for number in numbers]
+    return differences
+
+
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     pass
