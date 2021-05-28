@@ -33,4 +33,8 @@ def find_variance(numbers):
 if __name__ == "__main__":
     numbers = [100, 60, 70, 900, 100, 200, 500, 500, 503, 600, 1000, 1200]
     variance = find_variance(numbers)
-    print(f"The variance of this list of numbers is {variance}")
+    print(f"The variance of this list of numbers is {round(variance, 2)}")
+
+    standard_deviation = variance ** 0.5
+    print(
+        f"The standard deviation of the list is {round(standard_deviation, 2)}")
