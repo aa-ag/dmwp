@@ -2,21 +2,40 @@
 def measure_correlation(x, y):
     n = len(x)
 
-    product_sum = sum([(i * j) for i, j in zip(x, y)])
+    prod = []
 
-    squared_x_sum = sum(x) ** 2
-    squared_y_sum = sum(y) ** 2
+    for xi, yi in zip(x, y):
+        prod.append(xi*yi)
 
-    x_square_sum = sum([(xi ** 2) for xi in x])
-    y_square_sum = sum([(yi ** 2) for yi in y])
+    sum_prod_x_y = sum(prod)
 
-    numerator = (n * product_sum) - (squared_x_sum * squared_y_sum)
+    sum_x = sum(x)
+    sum_y = sum(y)
 
-    denominator_x_half = n * x_square_sum - squared_x_sum
-    denominator_y_half = n * y_square_sum - squared_y_sum
-    denominator = (denominator_x_half * denominator_y_half) ** 0.5
+    squared_sum_x = sum_x ** 2
+    squared_sum_y = sum_y ** 2
 
-    correlation = numerator / denominator
+    x_square = []
+
+    for xi in x:
+        x_square.append(xi ** 2)
+
+    x_square_sum = sum(x_square)
+
+    y_square = []
+
+    for yi in y:
+        y_square.append(yi ** 2)
+
+    y_square_sum = sum(y_square)
+
+    numerator = n * sum_prod_x_y - sum_x * sum_y
+
+    denominator_term1 = n * x_square_sum - squared_sum_x
+    denominator_term2 = n * y_square_sum - squared_sum_y
+    denominator = (denominator_term1 * denominator_term2) ** 0.5
+
+    correlation = numerator/denominator
     return correlation
 
 
