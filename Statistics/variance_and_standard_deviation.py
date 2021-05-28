@@ -1,7 +1,3 @@
-############------------ GLOBAL VARIABLES ------------############
-numbers = [100, 60, 70, 900, 100, 200, 500, 500, 503, 600, 1000, 1200]
-
-
 ############------------ FUNCTIONS ------------############
 def calculate_mean(numbers):
     '''
@@ -21,6 +17,20 @@ def find_differences(numbers):
     return differences
 
 
+def find_variance(numbers):
+    differences = find_differences(numbers)
+
+    squared_differences = [(j ** 2) for j in differences]
+
+    total_squared_differences = sum(squared_differences)
+
+    variance = total_squared_differences / len(numbers)
+
+    return variance
+
+
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
-    pass
+    numbers = [100, 60, 70, 900, 100, 200, 500, 500, 503, 600, 1000, 1200]
+    variance = find_variance(numbers)
+    print(f"The variance of this list of numbers is {variance}")
