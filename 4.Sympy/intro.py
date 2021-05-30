@@ -1,10 +1,7 @@
-from sympy.core.symbol import Symbol
+from sympy.core.symbol import Symbol, symbols
 
 x = Symbol('x')
-print(x)
+y = Symbol('y')
+z = Symbol('z')
 
-print(x + x + 1)
-# 2*x + 1
-
-print(x.name)
-# x
+x, y, z = symbols('x', 'y', 'z')
