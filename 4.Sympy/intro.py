@@ -1,11 +1,7 @@
-from sympy import symbol
-from sympy import Symbol
+from sympy.core.symbol import Symbol
 
 x = Symbol('x')
 print(x)
 
-'''
->>> from sympy import Symbol
->>> Symbol
-<class 'sympy.core.symbol.Symbol'>
-'''
+print(x + x + 1)
+# 2*x + 1
