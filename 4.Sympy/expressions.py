@@ -10,3 +10,6 @@ expr = x**3 + 3*x**2*y + 3*x*y**2 + y**3
 factors = factor(expr)
 print(factors)
 # (x + y)**3
+
+print(expand(factors))
+# x**3 + 3*x**2*y + 3*x*y**2 + y**3
