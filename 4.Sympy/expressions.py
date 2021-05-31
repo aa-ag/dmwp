@@ -5,8 +5,8 @@ from sympy import factor
 x = Symbol('x')
 y = Symbol('y')
 
-expression = (x ** 2) - (y ** 2)
+expr = x**3 + 3*x**2*y + 3*x*y**2 + y**3
 
-factors = factor(expression)
-print(expand(factors))
-# x**2 - y**2
+factors = factor(expr)
+print(factors)
+# (x + y)**3
