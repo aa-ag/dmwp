@@ -1,5 +1,6 @@
 ############------------ IMPORTS ------------############
-from sympy.core import expand, sympify, SympifyError
+from sympy.core import expand, SympifyError
+from sympy.core.sympify import sympify
 
 
 ############------------ FUNCTIONS ------------############
