@@ -1,11 +1,13 @@
-from sympy.core.sympify import sympify
+from sympy.core.sympify import sympify, SympifyError
 
-expression = input("Enter a mathematical expression:\n")
-# 2*x + x**2
+try:
+    expression = input("Enter a mathematical expression:\n")
+    # x**2 + 3*3 + x**3 + 2x
 
-simpified = sympify(expression)
-print(simpified)
-# x**2 + 2*x
+    simpified = sympify(expression)
+    print(simpified)
+    print(2*simpified)
 
-print(2*simpified)
-# 2*x**2 + 4*x
+except SympifyError:
+    print("Invalid Input")
+    # Invalid Input
