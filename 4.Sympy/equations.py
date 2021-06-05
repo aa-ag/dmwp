@@ -3,7 +3,10 @@ from sympy.core import Symbol
 from sympy.solvers.solvers import solve
 
 x = Symbol('x')
-expression = x**2 + x + 1
+a = Symbol('a')
+b = Symbol('b')
+c = Symbol('c')
+expression = a*x*x + b*x + c
 
-print(solve(expression, dict=True))
-# [{x: -1/2 - sqrt(3)*I/2}, {x: -1/2 + sqrt(3)*I/2}]
+print(solve(expression, x, dict=True))
+# [{x: (-b + sqrt(-4*a*c + b**2))/(2*a)}, {x: -(b + sqrt(-4*a*c + b**2))/(2*a)}]
