@@ -1,6 +1,7 @@
 from sympy import FiniteSet
-from fractions import Fraction
 
-test_set = FiniteSet(1, 1.5, Fraction(1, 5))
+numbers = [i for i in range(1, 999)]
+
+test_set = FiniteSet(*numbers)
 
 print(test_set)
