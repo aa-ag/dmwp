@@ -1,8 +1,6 @@
 from sympy import FiniteSet
 
-numbers = FiniteSet(1, 2, 3, 4, 5, 6)
+numbers = FiniteSet(1, 2, 3)
 
-subset_of_numbers = FiniteSet(3, 2, 1)
-
-print(numbers.is_superset(subset_of_numbers))
-# True
+print(numbers.powerset())
+# FiniteSet(FiniteSet(1), FiniteSet(1, 2), FiniteSet(1, 3), FiniteSet(1, 2, 3), FiniteSet(2), FiniteSet(2, 3), FiniteSet(3), EmptySet)
