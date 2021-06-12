@@ -1,9 +1,8 @@
-from numpy import number
 from sympy import FiniteSet
 
-numbers = {1, 2, 3, 4, 5}
+numbers = FiniteSet(1, 2, 3, 4, 5, 6)
 
-inversed_numbers = {5, 4, 3, 2, 1}
+subset_of_numbers = FiniteSet(3, 2, 1)
 
-print(numbers == inversed_numbers)
+print(subset_of_numbers.is_subset(numbers))
 # True
