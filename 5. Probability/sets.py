@@ -1,7 +1,9 @@
+from numpy import number
 from sympy import FiniteSet
 
-numbers = [i for i in range(1, 999)]
+numbers = {1, 2, 3, 4, 5}
 
-test_set = FiniteSet(*numbers)
+inversed_numbers = {5, 4, 3, 2, 1}
 
-print(test_set)
+print(numbers == inversed_numbers)
+# True
