@@ -1,6 +1,7 @@
 from sympy import FiniteSet
 
 numbers = FiniteSet(1, 2, 3)
+more_numbers = FiniteSet(4, 5, 6)
 
-print(numbers.powerset())
-# FiniteSet(FiniteSet(1), FiniteSet(1, 2), FiniteSet(1, 3), FiniteSet(1, 2, 3), FiniteSet(2), FiniteSet(2, 3), FiniteSet(3), EmptySet)
+print(numbers.union(more_numbers))
+# FiniteSet(1, 2, 3, 4, 5, 6)
