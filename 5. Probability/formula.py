@@ -12,3 +12,10 @@ if __name__ == "__main__":
         t = time_period(1/100)
         print('Lenght: {0} cm Time Period: {1:.3f} s'.format(float(i), float(t)))
 
+'''
+Lenght: 15.0 cm Time Period: 0.201 s
+Lenght: 18.0 cm Time Period: 0.201 s
+Lenght: 21.0 cm Time Period: 0.201 s
+Lenght: 22.5 cm Time Period: 0.201 s
+Lenght: 25.0 cm Time Period: 0.201 s
+'''
