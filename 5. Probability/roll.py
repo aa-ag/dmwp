@@ -1,16 +1,20 @@
-'''
-Roll a die until the total score is N
-'''
-
+############------------ IMPORT(S) ------------############
 import matplotlib.pyplot as plt
 import random
 
 
-target_score = 20
-
+############------------ FUNCTION(S) ------------############
 def roll():
+    '''
+     Roll a die until the total score is N
+    '''
     return random.randint(1, 6)
 
+
+############------------ TEST CASES ------------############
+target_score = 20
+
+############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     score = 0
     rolls = 0
@@ -21,16 +25,3 @@ if __name__ == "__main__":
         score += roll_the_die
 
     print(f"score of {score} reached after {rolls} rolls")
-
-'''
- rolled 2
-rolled 3
-rolled 1
-rolled 2
-rolled 1
-rolled 1
-rolled 2
-rolled 4
-rolled 5
-score of 21 reached after 9 rolls
-'''
