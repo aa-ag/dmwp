@@ -13,4 +13,16 @@ def check_prime(n):
 
 ###--- DRIVER CODE ---###
 if __name__ == "__main__":
-    pass
+    space = {i for i in range(1, 21)}
+    primes = list()
+
+    for i in space:
+        if check_prime(i):
+            primes.append(i)
+    
+    event = set(primes)
+    probability_calculation = probability(space, event)
+
+    print(f"Sample space: {space}")
+    print(f"Event: {event}")
+    print(f"The probability of rolling a prime: {probability_calculation}")
