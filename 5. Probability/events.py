@@ -12,4 +12,8 @@ event_b = {1, 3, 5}
 # event
 e = event_a.union(event_b)
 
-print(len(e)/len(space))
+probability = len(e)/len(space)
+
+clean_result = lambda x: x - x % 0.01
+
+print(clean_result(probability))
