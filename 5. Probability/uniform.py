@@ -14,4 +14,8 @@ def toss():
 
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
-    print(toss())
+    sample = list()
+    for i in range(0, 101):
+        sample.append(toss())
+
+    print(sample)
