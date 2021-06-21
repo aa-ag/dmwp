@@ -1,5 +1,6 @@
 ############------------ IMPORT(S) ------------############
 import random
+from collections import Counter as counter
 
 ############------------ FUNCTION(S) ------------############
 def toss():
@@ -15,7 +16,8 @@ def toss():
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     sample = list()
-    for i in range(0, 101):
+    for i in range(0, 1001):
         sample.append(toss())
 
-    print(sample)
+    print(counter(sample))
+    # Counter({'heads': 666, 'tails': 335})
