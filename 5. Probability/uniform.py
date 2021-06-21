@@ -6,7 +6,7 @@ def toss():
     '''
      simulate a toss where
      heads is twice as likely as
-     tales
+     tails (coin)
     '''
     pass
 
