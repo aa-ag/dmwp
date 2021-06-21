@@ -16,8 +16,15 @@ def toss():
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     sample = list()
-    for i in range(0, 1001):
+    for i in range(0, 1000001):
         sample.append(toss())
 
-    print(counter(sample))
-    # Counter({'heads': 666, 'tails': 335})
+    c = counter(sample)
+    # print(c)
+    # Counter({'heads': 665675, 'tails': 334326})
+
+    h = round((c['heads'] / len(sample)) * 100, 2)
+    t = round((c['tails'] / len(sample)) * 100, 2)
+
+    print(f"Heads: {h}% of the time -- Tails: {t}% of the time")
+    # Heads: 66.69% of the time -- Tails: 33.31% of the time
