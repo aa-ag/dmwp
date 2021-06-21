@@ -8,8 +8,10 @@ def toss():
      heads is twice as likely as
      tails (coin)
     '''
-    pass
+    if random.random() < 2/3:
+        return "heads"
+    return "tails"
 
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
-    toss()
+    print(toss())
