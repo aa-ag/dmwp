@@ -1,5 +1,6 @@
 ############------------ IMPORT(S) ------------############
 import random
+from collections import Counter as counter
 
 ############------------ FUNCTION(S) ------------############
 def get_index(probability):
@@ -35,4 +36,7 @@ def dispense():
 
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
-    print(dispense())
+    simulation = [dispense() for i in range(0, 101)]
+
+    print(counter(simulation))
+    # {50: 37, 20: 30, 5: 18, 10: 16}
