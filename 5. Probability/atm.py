@@ -24,6 +24,15 @@ def get_index(probability):
 
     return len(probability) - 1
 
+
+def dispense():
+    dollar_bills = [5, 10, 20, 50]
+    
+    probability_of_each = [1/6, 1/6, 1/3, 1/3]
+
+    bill_index = get_index(probability_of_each)
+    return dollar_bills[bill_index]
+
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     pass
