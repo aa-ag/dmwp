@@ -1,6 +1,6 @@
 ############------------ IMPORT(S) ------------############
 import random
-from collections import Counter as counter
+import collections
 
 ############------------ FUNCTION(S) ------------############
 def get_index(probability):
@@ -38,5 +38,8 @@ def dispense():
 if __name__ == "__main__":
     simulation = [dispense() for i in range(0, 101)]
 
-    print(counter(simulation))
-    # {'$50': 30, '$20': 30, '$10': 23, '$5': 18}
+    count = collections.Counter(simulation)
+
+    results = collections.OrderedDict(sorted(count.items()))
+    print(results)
+    # [('$10', 21), ('$20', 32), ('$5', 23), ('$50', 25)]
