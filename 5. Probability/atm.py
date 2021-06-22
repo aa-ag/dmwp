@@ -27,7 +27,7 @@ def get_index(probability):
 
 
 def dispense():
-    dollar_bills = [5, 10, 20, 50]
+    dollar_bills = ['$5','$10', '$20', '$50']
     
     probability_of_each = [1/6, 1/6, 1/3, 1/3]
 
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     simulation = [dispense() for i in range(0, 101)]
 
     print(counter(simulation))
-    # {50: 37, 20: 30, 5: 18, 10: 16}
+    # {'$50': 30, '$20': 30, '$10': 23, '$5': 18}
