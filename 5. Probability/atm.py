@@ -41,5 +41,14 @@ if __name__ == "__main__":
     count = collections.Counter(simulation)
 
     results = collections.OrderedDict(sorted(count.items()))
-    print(results)
-    # [('$10', 21), ('$20', 32), ('$5', 23), ('$50', 25)]
+    
+    for bill, prob in results.items():
+        print(f"probability of getting a {bill} bill from this ATM: {prob}%")
+
+    '''
+    probability of getting a $10 bill from this ATM: 15%
+    probability of getting a $20 bill from this ATM: 36%
+    probability of getting a $5 bill from this ATM: 14%
+    probability of getting a $50 bill from this ATM: 36%
+    '''
+    
