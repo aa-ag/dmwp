@@ -10,8 +10,14 @@ import math
 import sympy
 
 ############------------ CODE ------------############
-print(math.sin(math.pi/2))
+# print(math.sin(math.pi/2))
 # 1.0
 
-print(sympy.sin(math.pi/2))
+# print(sympy.sin(math.pi/2))
 # 1.00000000000000
+
+x = sympy.Symbol('x')
+
+limit = sympy.Limit(1/x, x, sympy.S.Infinity)
+print(limit.doit())
+# 0
