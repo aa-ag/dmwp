@@ -6,8 +6,12 @@
 ** to do: https://docs.python.org/3/library/math.html
 '''
 ############------------ IMPORT(S) ------------############
-import math 
+import math
+import sympy
 
 ############------------ CODE ------------############
 print(math.sin(math.pi/2))
 # 1.0
+
+print(sympy.sin(math.pi/2))
+# 1.00000000000000
